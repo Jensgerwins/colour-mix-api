@@ -1,0 +1,40 @@
+:root {
+    --hintergrund:red;
+    --headerHintergrund:aqua;
+   
+}
+
+
+
+
+
+
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    max-width: 1980px;
+  background-color: var(--redString, --greenString, --blueString);
+}
+
+
+#header-container {
+margin: 0%;
+padding: 3%;
+
+padding-left: 3%;
+    background-color: var(--headerHintergrund);
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+}
+
+#colour-hex {
+    margin-top: 15px;
+}
+
+#button-random {
+  margin-left: 70%;
+}
+
+
+
