@@ -10,10 +10,10 @@
 
 
 body {
-    margin: 0%;
-    box-sizing: border-box;
-    max-width: 1980px;
-  background-color: var(--redString, --greenString, --blueString);
+  margin: 0%;
+  box-sizing: border-box;
+  max-width: 1980px;
+background-color:var(--hintergrund);
 }
 
 

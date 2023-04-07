@@ -13,21 +13,21 @@ randomBtn.addEventListener("click", () => {
             return response.json();
         })
         .then((data) => {
-            let backColor = data.rgb;
-            let redColor = data.rgb.r;
-            let greenColor = data.rgb.r;
-            let blueColor = data.rgb.r;
-            const redString = redColor.toString();
-            const greenString = greenColor.toString();
-            const blueString = blueColor.toString();
-            const hexColor = data.color;
-            colourHex.innerText = hexColor;
-            redRange.value = redColor;
+            const redColor = data.rgb.r;
+            const greenColor = data.rgb.g;
+            const blueColor = data.rgb.b;
+
             greenRange.value = greenColor;
             blueRange.value = blueColor;
+            const redString = redColor.toString(16);
+            const greenString = greenColor.toString(16);
+            const blueString = blueColor.toString(16);
+            const colorHexValue = "#" + redString + greenString + blueString;
+            const hexColor = data.color;
+            colourHex.innerText = colorHexValue;
+            document.body.style.backgroundColor = hexColor;
 
-
-            console.log(redString);
+            console.log(hexColor);
         })
 
 
