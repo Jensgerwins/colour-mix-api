@@ -16,7 +16,7 @@ randomBtn.addEventListener("click", () => {
             const redColor = data.rgb.r;
             const greenColor = data.rgb.g;
             const blueColor = data.rgb.b;
-
+            redRange.value = redColor;
             greenRange.value = greenColor;
             blueRange.value = blueColor;
             const redString = redColor.toString(16);
@@ -27,7 +27,9 @@ randomBtn.addEventListener("click", () => {
             colourHex.innerText = colorHexValue;
             document.body.style.backgroundColor = hexColor;
 
-            console.log(hexColor);
+            console.log(data.color);
+            console.log(colorHexValue);
+            console.log(redString + greenString + blueString);
         })
 
 
